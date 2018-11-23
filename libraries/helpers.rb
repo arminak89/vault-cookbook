@@ -7,7 +7,7 @@
 
 module VaultCookbook
   module Helpers
-    extend self # rubocop: disable Style/ModuleFunction
+    module_function
 
     def arch_64?
       node['kernel']['machine'] =~ /x86_64/ ? true : false
